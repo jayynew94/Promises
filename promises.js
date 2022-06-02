@@ -1,21 +1,30 @@
 /* ============================== Phase 1 ============================== */
 /* -------------------------- exploring async -------------------------- */
+function num1() {
+    return 1
+}
 
-// Your code here
+async function num2() {
+    return 2 
+}
 
-
-
+num2().then(result => console.log(result))
+// console.log("num1", num1())
+// console.log("num2", num2())
 /* ============================== Phase 2 ============================== */
 /* -------------------------- exploring await -------------------------- */
+async function waiting(){
+    const value = await num2()
+    console.log("waiting", value)
+};
 
-// Your code here
-
+waiting();
 
 
 /* ============================== Phase 3 ============================== */
 /* --------------------- creating a custom Promise --------------------- */
 
-// Your code here
+
 
 
 
